@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#273f52">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@mipmap/ic_logo"
+            android:paddingRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Data Storage Sample"
+            android:layout_toRightOf="@+id/imageView"
+            android:id="@+id/textView"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignTop="@+id/imageView"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferences"
+            android:textAllCaps="false"
+            android:id="@+id/btn_pref"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:onClick="onClickPreferences" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SQLite"
+            android:textAllCaps="false"
+            android:id="@+id/btn_sql"
+            android:layout_toRightOf="@id/btn_pref"
+            android:layout_margin="10dp"
+            android:onClick="onClickSQLite" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:padding="20dp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close App"
+        android:textAllCaps="false"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="onClickClose" />
+</LinearLayout>
